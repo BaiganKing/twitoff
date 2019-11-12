@@ -9,4 +9,10 @@ app = Flash(__name__)
 
 #define a function
 def hello():
-    return "Hello world!"
+    return render_template('home.html')
+
+#creating another route
+@app.route("/about")
+
+def preds():
+    return render_template('about.html')
