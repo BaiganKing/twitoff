@@ -1,4 +1,4 @@
-"""App facotry and routes and configurations"""
+"""App factory and routes and configurations"""
 
 from decouple import config
 from flask import Flask, render_template, request
@@ -28,7 +28,7 @@ def create_app():
         return render_template('base.html', title = 'Reset', users = [])
 
 
-    #add more stuff
+    #add in more stuff
     @app.route('/user',methods=['POST'])
     @app.route('/user/<name>',methods=['GET'])
     def user(name=None, message=''):
