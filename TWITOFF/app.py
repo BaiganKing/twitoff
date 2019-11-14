@@ -1,3 +1,5 @@
+"""App facotry and routes and configurations"""
+
 from decouple import config
 from flask import Flask, render_template, request
 from .models import DB, User
